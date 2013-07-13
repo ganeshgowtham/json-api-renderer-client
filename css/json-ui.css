@@ -1,0 +1,64 @@
+html, body {
+    height: 100%;
+}
+
+.main {
+    *zoom:1;
+}
+
+.main, .row-fluid {
+    height: 100%;
+}
+
+.main:before, .main:after,
+.column:before, .column:after {
+    content: "";
+    display: table;
+}
+
+.main:after,
+.column:after {
+    clear: both;
+}
+
+.column {
+    height: 100%;
+    overflow: auto;
+    *zoom:1;
+}
+
+.column .padding {
+    padding: 20px;
+}
+
+.box {
+    bottom: 40px;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 40px;
+}
+
+.span9.full {
+    width: 100%;
+}
+
+.footer {
+    height: 40px;
+    width: 100%;
+    z-index: 100;
+    background-color: red;
+    bottom: 0;
+    left:0;
+    right:0;
+    position: fixed;
+}
+
+.dropdown-menu a {
+    white-space:normal;
+}
+.dropdown-menu > li{position:relative;}
+
+.dropdown-menu > li > i{position:absolute;left:0;top:3px;}
+
+
